@@ -1,0 +1,68 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/message/message",
+		    "style" : {
+				"navigationBarTitleText": "遇见信息",
+				"navigationBarBackgroundColor": "#007AFF",
+				"h5": {
+					"pullToRefresh":{
+						"color": "#4CD964"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/index/index"
+		}
+        ,{
+            "path" : "pages/contact/contact"
+        },
+		{
+		    "path" : "pages/detail/detail"
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "绿帽子",
+		"navigationBarBackgroundColor": "#ccc",
+		"backgroundColor": "#333",
+		"enablePullDownRefresh": true,
+		"backgroundTextStyle": "light"
+	},
+	"tabBar": {
+		"color": "#DCDCDC",
+		"selectedColor": "#FF3030",
+		"backgroundColor": "#F0FFF0",
+		"borderStyle": "white",
+		"position": "top", 
+		"list": [
+			{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/index.png",
+				"selectedIconPath": "static/tabbar/indexAct.png"
+			},
+			{
+				"text": "信息",
+				"pagePath": "pages/message/message",
+				"iconPath": "static/tabbar/mine.png",
+				"selectedIconPath": "static/tabbar/mineAct.png"
+			},
+			{
+				"text": "我们",
+				"pagePath": "pages/contact/contact",
+				"iconPath": "static/tabbar/team.png",
+				"selectedIconPath": "static/tabbar/teamAct.png"
+			}
+		]
+	},
+	"condition": {
+		"current": 0,
+		"list": [{
+			"name": "详情页",
+			"path": "pages/detail/detail",
+			"query": "id=80"
+		}]
+	}
+}

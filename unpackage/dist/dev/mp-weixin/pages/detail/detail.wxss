@@ -1,0 +1,10 @@
+
+.box{
+	width: 10rem;
+	background-color: #007AFF;
+}
+.box-active{
+	background-color: red;
+}
+
+
