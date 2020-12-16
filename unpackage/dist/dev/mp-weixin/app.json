@@ -1,7 +1,11 @@
 {
   "pages": [
-    "pages/message/message",
     "pages/index/index",
+    "pages/navigator/navigator",
+    "pages/message/message",
+    "pages/list/list",
+    "pages/home/home",
+    "pages/uni-style/uni-style",
     "pages/contact/contact",
     "pages/detail/detail"
   ],
@@ -11,7 +15,6 @@
     "navigationBarTitleText": "绿帽子",
     "navigationBarBackgroundColor": "#ccc",
     "backgroundColor": "#333",
-    "enablePullDownRefresh": true,
     "backgroundTextStyle": "light"
   },
   "tabBar": {
@@ -42,5 +45,5 @@
     ]
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap37.json"
+  "sitemapLocation": "sitemap82.json"
 }

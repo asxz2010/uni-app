@@ -1,33 +1,45 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-		    "path" : "pages/message/message",
-		    "style" : {
+			"path": "pages/index/index"
+		}, {
+			"path": "pages/navigator/navigator"
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
 				"navigationBarTitleText": "遇见信息",
 				"navigationBarBackgroundColor": "#007AFF",
 				"h5": {
-					"pullToRefresh":{
+					"pullToRefresh": {
 						"color": "#4CD964"
 					}
 				}
 			}
+		}, {
+			"path": "pages/list/list",
+			"style": {
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 200
+			}
+		}, {
+			"path": "pages/home/home"
 		},
 		{
-			"path": "pages/index/index"
-		}
-        ,{
-            "path" : "pages/contact/contact"
-        },
+			"path": "pages/uni-style/uni-style"
+		},
 		{
-		    "path" : "pages/detail/detail"
+			"path": "pages/contact/contact"
+		},
+		{
+			"path": "pages/detail/detail"
 		}
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "绿帽子",
 		"navigationBarBackgroundColor": "#ccc",
 		"backgroundColor": "#333",
-		"enablePullDownRefresh": true,
 		"backgroundTextStyle": "light"
 	},
 	"tabBar": {
@@ -35,9 +47,8 @@
 		"selectedColor": "#FF3030",
 		"backgroundColor": "#F0FFF0",
 		"borderStyle": "white",
-		"position": "top", 
-		"list": [
-			{
+		"position": "top",
+		"list": [{
 				"text": "首页",
 				"pagePath": "pages/index/index",
 				"iconPath": "static/tabbar/index.png",

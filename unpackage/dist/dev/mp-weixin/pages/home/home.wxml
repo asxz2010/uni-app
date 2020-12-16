@@ -1,0 +1,1 @@
+<view><image src="{{imgUrl}}"></image><block wx:for="{{arr}}" wx:for-item="p" wx:for-index="__i0__" wx:key="id"><view>{{"序号："+p.id+" 名字："+p.name+" 年龄："+p.age}}</view></block><button data-event-opts="{{[['tap',[['pointMe',[20,'$event']]]]]}}" bindtap="__e">点我</button></view>
